@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>   
+  <div class='main'>    
+    <header>
+        <input type="text" placeholder="Search for a city..." id="cityName" autocomplete="off"> 
+        <div class='btns'>
+          <button id="getWeatherByName" class="btn">Search</button>
+          <button id="getWeather" class="btn">Local weather</button>
+        </div>
+    </header>      
+
+    <section class="container"> 
+    <div class="info">     
+     <span id="location"></span>
+    </div>
+ 
+    <div>
+      <span id="temperature"></span>
+      <p class='feels-par'></p>
+      <span id='feels'></span>
+    </div>   
+
+    <div class="info">
+      <p class='wind-par'></p>
+      <span id="winds"></span>
+     </div>
+  
+    <div class="info">
+      <p class="cloud-par"></p>
+      <span id="clouds"></span>
+     </div>
+ 
+    <div class="info">
+     <p class='pres-par'></p>
+     <span id="pressure"></span>
+    </div>    
+    
+  </section>
+</div>
+  <script src="weather.js"></script>
+ </body>
+</html>
