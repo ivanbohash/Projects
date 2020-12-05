@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.header {
+  border-bottom: 1px solid rgb(28, 73, 59);
+  background: rgb(12, 97, 26);
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.header .header-text {
+  margin: 20px 0px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 4px;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.container-content {
+  max-width: 100%;
+  width: 1500px;
+}
+
+.random {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-for-random {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+#random-btn {
+  padding: 8px 18px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid rgb(10, 75, 21);
+  border-radius: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: rgb(7, 91, 139);
+  transition: linear 0.2s;
+}
+
+#random-btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(7, 91, 139);
+  letter-spacing: 2px;
+  border: 1px solid #000;
+}
+
+.search {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-par {
+  margin: 10px;
+}
+
+#input-search {
+  padding: 8px 40px;
+  border: 1px solid rgb(153, 155, 153);
+  border-radius: 18px;
+  transition: ease-out 0.2s;
+  background: #f5f4f4;
+}
+
+#input-search:focus {
+  padding: 8px 80px;
+  border: none;
+  border-bottom: 2px solid rgb(3, 67, 92);
+  background: #e3f2f8;
+}
+
+#input-search::placeholder {
+  text-align: center;
+}
+
+.cards {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(209, 253, 251);
+  background: #f6f6f6;
+  margin: 15px 5px;
+  padding: 6px;
+  width: 250px;
+  height: 100px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(3, 24, 49, 0.7), 0 10px 10px rgba(5, 87, 112, 0.2);
+  transition: linear 0.2s;
+}
+
+.cards .card:hover {
+  transform: translateY(-15px);
+  background: rgb(46, 168, 69);
+  border: none;
+}
+
+.card .wiki-answer {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: ease-in 0.15s;
+}
+.card .wiki-answer:hover {
+  color: #fff;
+}
