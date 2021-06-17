@@ -11,8 +11,7 @@ MixOrMatch.prototype.startGame = function () {
 	this.totalClicks = 0;
 	this.timeRemaining = this.totalTime;
 	this.matchedCards = [];
-	this.busy = true;
-	this.shuffleCards();
+	this.busy = true;	
 
 	setTimeout(() => {
 		this.shuffleCards();
